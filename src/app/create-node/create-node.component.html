@@ -1,0 +1,16 @@
+<h1 style="text-align: center">Add child</h1>
+<form class="modal-content" (submit)="submit($event)" onsubmit="return false">
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required />
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required />
+
+    <label><b>Dte of birth</b></label>
+    <input type="date" placeholder="Date of birth" name="date" required />
+
+    <button type="button" (click)="onClose()">Cancle</button>
+    <button type="submit">Add Node</button>
+  </div>
+</form>
